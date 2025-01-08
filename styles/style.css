@@ -1,0 +1,71 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+body {
+    font-family: "Gowun Batang", serif;
+}
+nav a {
+    text-align: center;
+    background-color: #F7F9F9;
+    color: #062726;
+    font-size: 1.5em;
+    padding: 20px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav a:hover {
+    background-color: #062726;
+    color: #F7F9F9;
+}
+header {
+    background-color: #7A82AB;
+    padding: 20px;
+}
+h1 {
+    color:#F7F9F9;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 98%;
+    margin: 0 auto;
+}
+.card1 {
+    grid-column: 1/4;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #102B3F;
+    color: #F7F9F9;
+    text-align: center;
+}
+.card2 {
+    grid-column: 4/5;
+    font-size: 20px;
+    text-align: center;
+    background-color: #E0D0C1;
+    color: #102B3F;
+    padding: 20px;
+    
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 25px;
+}
+footer {
+    background-color: #7A82AB;
+    color: #F7F9F9;
+    font-size: 1.5em;
+    width: 100;
+    padding: 20px 20px;
+    text-align: left;
+}
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    padding: 15px;
+}
