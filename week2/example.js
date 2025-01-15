@@ -6,6 +6,7 @@ document.getElementById("myAppleElement").textContent = myApples;
 document.getElementById("friendAppleElement").textContent = friendApples;
 document.getElementById("totalApplesElement").textContent = total;
 
+//variable example
 const one = 1;
 const two = "2";
 
