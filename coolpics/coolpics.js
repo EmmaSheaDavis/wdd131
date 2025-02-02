@@ -1,4 +1,4 @@
-const menuButton = document.querySelector(".menu-button");
+const menuButton = document.querySelector(".menubutton");
 function toggleMenu() {
   const menu = document.querySelector(".menu");
   menu.classList.toggle("hide");
@@ -6,16 +6,15 @@ function toggleMenu() {
 
 menuButton.addEventListener("click", toggleMenu);
 
-function viewerTemplate(pic, alt) {
+function viewerTemplate() {
   return `<div class="viewer">
     <button class="close-viewer">X</button>
-    <img src="${pic}" alt="${alt}">
+    <img src="norris-full.jpeg" alt="norris full img">
     </div>`;
 }
 
 function viewHandler(event) {
   let element = event.target;
-  if (element.tagName !== "img") return;
 
   let imgSrc = element.getAttribute("src");
   let imgPart = imgSrc.split("-");
