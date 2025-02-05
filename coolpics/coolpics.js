@@ -6,8 +6,9 @@ function toggleMenu() {
 
 menuButton.addEventListener("click", toggleMenu);
 
+//the aria and role attribute are for accesability
 function viewerTemplate() {
-  return `<div class="viewer">
+  return `<div class="viewer" aria-modal="true" role="dialog">
     <button class="close-viewer">X</button>
     <img src="norris-full.jpeg" alt="norris full img">
     </div>`;
