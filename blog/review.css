@@ -2,14 +2,14 @@
   --primary-color: #f08842;
   --primary-color-dark: #e57830;
   --primary-color-light: #ff944c;
-  --secondary-color: #ffedd0;
-  --font-color-dark: #333;
-  --font-color-light: #fff;
+  --secondary-color: #ffd0a8;
+  --font-color-dark: #1f1f1f;
+  --font-color-light: #fff9f9;
 }
 body {
   margin: 0 auto;
   max-width: 2500px;
-  font-family: "Helvetica", "Arial", "sans-serif";
+  font-family: "Arial", "sans-serif";
 }
 header {
   background-color: var(--primary-color);
@@ -17,8 +17,7 @@ header {
   text-align: center;
   max-width: 100%;
   position-anchor: sticky;
-  font-family: "Impact", "serif";
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 h1 {
   padding: 20px;
@@ -30,6 +29,7 @@ nav {
   align-items: center;
   background-color: var(--primary-color-dark);
   text-decoration: none;
+  font-size: 20px;
 }
 nav a {
   padding-right: 55px;
@@ -47,7 +47,7 @@ main {
   margin: 0 auto;
   max-width: 100%;
   min-width: 350px;
-  height: 600px;
+  height: 650px;
 }
 .card2 {
   border-radius: 30px;
@@ -55,7 +55,7 @@ main {
   margin: 0 auto;
   max-width: 100%;
   min-width: 350px;
-  height: 600px;
+  height: 650px;
 }
 .cards h2 {
   padding: 10px;
@@ -68,3 +68,50 @@ main {
   max-width: 250px;
   max-height: 925px;
 }
+.bookinfo1 {
+  text-align: center;
+  padding-top: 130px;
+}
+.bookinfo2 {
+  text-align: center;
+  padding-top: 20px;
+}
+p {
+  padding: 10px;
+}
+.skiptocontent {
+  /* set the element to absolute positioning */
+  position: absolute;
+
+  /* move it off screen */
+  top: -40px;
+  /* Make sure it will be on the left edge of the screen */
+  text-align: left;
+  /* Change the background and color to something that stands out */
+  color: var(--secondary-color);
+}
+.skiptocontent a:focus pseudo-class {
+  /* Move it back on when focused */
+  top: 0;
+}
+
+/* @media screen and (min-width: 700px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 350px;
+  }
+} */
