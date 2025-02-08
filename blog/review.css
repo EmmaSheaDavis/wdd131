@@ -17,24 +17,27 @@ header {
   text-align: center;
   max-width: 100%;
   position-anchor: sticky;
-  letter-spacing: 1px;
+  letter-spacing: 1px; 
+  padding-top: 5px;
 }
 h1 {
   padding: 20px;
 }
-nav {
-  display: flex;
+nav  {
+  display: block;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: var(--primary-color-dark);
   text-decoration: none;
   font-size: 20px;
+  padding: 25px;
 }
 nav a {
-  padding-right: 55px;
+  text-align: center;
   text-decoration: none;
   color: var(--font-color-dark);
+  padding: 25px;
 }
 main {
   text-align: center;
@@ -88,7 +91,7 @@ p {
   /* Make sure it will be on the left edge of the screen */
   text-align: left;
   /* Change the background and color to something that stands out */
-  color: var(--secondary-color);
+  color: var(--font-color-dark);
 }
 .skiptocontent a:focus pseudo-class {
   /* Move it back on when focused */
