@@ -23,5 +23,75 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	}
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
+		}
 ]
+
+const container = document.querySelector(".cards");
+
+articles.forEach(item =>{
+	const article = document.createElement("article");
+
+	const articleHtml =
+ `<div class="card1">
+<h2>Septimus Heap Book One: Magyk</h2>
+<img
+  id="card1img"
+  src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+  alt="Book cover for Septimus Heap 1"
+/>
+<p>
+  If you enjoy stories about seventh sons of seventh sons and magyk
+  this is the book for you.
+</p>
+<p class="date">July 5, 2022</p>
+<p class="bookinfo1">Age: 10-14, Genre: Fantasy, Stars: ****</p>
+</div>
+<div class="card2">
+<h2>Magnus Chase Book One: Sword of Summer</h2>
+<img
+  id="card2img"
+  src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300"
+  alt="Book cover for Magnus Chase 1"
+/>
+<p>
+  The anticipated new novel by Rick Riordan. After Greek mythology
+  (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane
+  Chronicles), Rick decides to try his hand with Norse Mythology, and
+  the end result is good.
+</p>
+<p class="date">December 12, 2021</p>
+<p class="bookinfo2">Age: 12-16, Genre: Fantasy, Stars: ⭐⭐⭐⭐</p>
+</div>
+<div class="card3">
+<h2>Belgariad Book One: Pawn of Prophecy</h2>
+<img
+  id="card3img"
+  src="https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg"
+  alt="Book cover for Belgariad Book One: Pawn of Prophecy"
+/>
+<p>
+A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his
+ 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on
+  a complex mission.
+</p>
+<p class="date">Febuary 12, 2022</p>
+<p class="bookinfo2">Age: 12-16, Genre: Fantasy, Stars: ⭐⭐⭐⭐</p>
+</div>`;
+
+article.innerHTML = articleHtml;
+
+container.appendChild(article);
+})

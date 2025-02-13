@@ -58,7 +58,15 @@ main {
   margin: 0 auto;
   max-width: 100%;
   min-width: 350px;
-  height: 650px;
+  height: 700px;
+}
+.card3 {
+  border-radius: 30px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 350px;
+  height: 700px;
 }
 .cards h2 {
   padding: 10px;
@@ -71,13 +79,17 @@ main {
   max-width: 250px;
   max-height: 925px;
 }
+#card3img {
+  max-width: 250px;
+  max-height: 925px;
+}
 .bookinfo1 {
   text-align: center;
-  padding-top: 130px;
+  padding-top: 0px;
 }
 .bookinfo2 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 p {
   padding: 10px;
@@ -96,6 +108,10 @@ p {
 .skiptocontent a:focus pseudo-class {
   /* Move it back on when focused */
   top: 0;
+}
+
+.date {
+  font-size: 18px;
 }
 
 /* @media screen and (min-width: 700px) {
@@ -118,3 +134,4 @@ p {
     min-width: 350px;
   }
 } */
+  
