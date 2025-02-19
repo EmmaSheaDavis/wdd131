@@ -15,10 +15,12 @@ function togglePaymentDetails(e) {
     theForm.paypalUsername.required = false;
   
     // Show the container based on the selected payment method
-    if (theForm.paymentMethod.value === "creditCard") {
+    let value = e.target.value;
+
+    if (value === "creditCard") {
       creditCardContainer.classList.remove("hide");
       theForm.creditCardNumber.required = true;
-    } else if (theForm.paymentMethod.value === "paypal") {
+    } else if (value === "paypal") {
       paypalContainer.classList.remove("hide");
       theForm.paypalUsername.required = true;
     }
