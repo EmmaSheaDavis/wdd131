@@ -121,6 +121,12 @@ title {
         justify-content: flex-end;
         margin-left: 280px;
     }
+    .recipe-link {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 200px;
+    }
     
 }
     
