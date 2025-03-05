@@ -29,6 +29,7 @@ img {
     width: 30px;
     padding-top: 5px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #search-bar {
     width: 350px;
@@ -116,5 +117,10 @@ title {
     #search-bar{
         width: 1000px;
     }
+    .social{
+        justify-content: flex-end;
+        margin-left: 280px;
+    }
+    
 }
     
