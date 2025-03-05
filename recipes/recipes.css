@@ -80,6 +80,7 @@ h2 {
 .social {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .recipe-link {
     margin-bottom: 20px;
@@ -92,5 +93,28 @@ h2 {
 }
 title {
     font: var(--secondary-font)
+}
+
+@media screen and (min-width: 600px){
+    .recipe-card{
+        flex-direction: row;
+        width: 1000px;
+    }
+    .recipe-card .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .recipe-card-img {
+        width: 500px;
+        margin: 10px;
+    }
+    .hide {
+        display: block;
+        margin: 0;
+        font-size: 20px;
+    }
+    #search-bar{
+        width: 1000px;
+    }
 }
     
