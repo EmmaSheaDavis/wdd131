@@ -114,8 +114,6 @@ let filterList = simpleList.filter(searchList);
 
 console.log(filterList);
 
-//object property sort and filter
-
 function compareFn(a, b) {
   if (a.trailhead < b.trailhead) {
     return -1;
