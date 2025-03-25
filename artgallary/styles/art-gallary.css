@@ -26,3 +26,75 @@
   --nav-hover-link-color: var(--accent2-color);
   --nav-hover-background-color: var(--secondary-color);
 }
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: var(--heading-font);
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  margin: 0;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+img  {
+  max-width: 100%;
+  width: 120px;
+  padding: 15px;
+}
+.search-section {
+  display: flex;
+  justify-content: center;
+}
+#search-icon {
+  cursor: pointer;
+  height: 35px;
+  width: 30px;
+  display: flex; /* Add this to make the button a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 2px;
+}
+#search-bar {
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#search-icon img {
+  width: 100%; /* Makes the image scale to the button’s width */
+  height: 100%; /* Makes the image scale to the button’s height */
+  object-fit: contain;
+}
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.artwork-list {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.artwork-img{
+  width: 100%;
+  align-self: center;
+}
+.content {
+  font-family: var(--paragraph-font);
+}
+h2{
+  color: var(--primary-color);
+}
