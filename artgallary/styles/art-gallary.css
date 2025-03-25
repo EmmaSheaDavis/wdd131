@@ -83,14 +83,15 @@ header {
   display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid black;
-    padding: 15px;
+    border: 1px solid var(--accent2-color);
+    padding: 20px;
     border-radius: 10px;
     margin: 20px;
 }
 .artwork-img{
   width: 100%;
   align-self: center;
+  box-shadow:
 }
 .content {
   font-family: var(--paragraph-font);
