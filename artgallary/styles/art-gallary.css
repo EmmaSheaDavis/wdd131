@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #493657;
-  --secondary-color: #8783D1;
-  --accent1-color: #FBF7F4;
+  --secondary-color: #8783d1;
+  --accent1-color: #fbf7f4;
   --accent2-color: #000000;
 
   /* change the values below to your chosen font(s) */
@@ -46,7 +46,7 @@ body {
   justify-content: center;
   margin: 0;
 }
-img  {
+img {
   max-width: 100%;
   width: 120px;
   padding: 15px;
@@ -81,21 +81,58 @@ header {
 }
 .artwork-list {
   display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid var(--accent2-color);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 5px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
-.artwork-img{
+.artwork-img {
   width: 100%;
   align-self: center;
-  box-shadow:
 }
 .content {
   font-family: var(--paragraph-font);
 }
-h2{
+h2 {
   color: var(--primary-color);
+}
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  #search-bar {
+    width: 500px;
+  }
+  .artwork-img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .art-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-right: 85px;
+  }
+  .artwork-list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hide {
+    display: block;
+  }
+  .art-cards {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+  }
+  #search-bar {
+    width: 700px;
+  }
 }

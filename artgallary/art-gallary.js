@@ -6,6 +6,7 @@
         description: "Artist personal fictional character created to fit in the Call of Duty video game universe.",
         post_link: "n/a",
         image: "./images/banshee.png",
+        image_small: "./images/imagecompressor/banshee-min.png",
         details: "An origonal character created by the artist, Banshee is a silent killer. Trained for lethal combat and efficient with a sniper rifle, you dont want to be on the other end of her scope. Quiet and mysterious, she's not quick to make friends but loyal to the few who have the privilage to be called her friend.",
     },
     {
@@ -15,6 +16,7 @@
         description: "Fanart of Helldiver Hellpods decending to a planets surface from orbit.",
         post_link: "https://www.instagram.com/p/DFv_sjeM2jZ/?next=%2F",
         image: "./images/helldivers.png",
+        image_small: "./images/imagecompressor/helldivers-min.png",
         details: "From the game Helldivers 2, Helldivers plumet rapidly to the planets surface to begin an operation. The pods these military individuals operate become red hot from entering the atmosphere with a seperate pair of bods also decending in the distance. This alien planet is going to face the fierce loyalty to freedom from these Helldivers.",
     },{
         title: "The Russian Spider",
@@ -23,6 +25,7 @@
         description: "The Artist own design for an alternate dimension Spider-Man.",
         post_link: "https://www.instagram.com/p/C_MCAmYvUON/?next=%2F",
         image: "./images/spider-man.png",
+        image_small: "./images/imagecompressor/spider-man-min.png",
         details: "Inspired from the Spiderverse movie series, the Russian Spider is an alternate Spider-Man whos origins are set in Russia. Also known as Vlad, the Russian Spider works for the Russian Government and volunteered to scientific expiraments that made him Spider-Man. Unlike other Spider-Men, the Russian Spider is not afraid to do what is necessary to protect everyone.",
     },{
         title: "Titanfall",
@@ -31,6 +34,7 @@
         description: "Commissioned fanart of a Titan and its Pilot.",
         post_link: "https://www.instagram.com/p/C41cewEs1l-/?next=%2F",
         image: "./images/titanfall.png",
+        image_small: "./images/imagecompressor/titanfall-min.png",
         details: "Commissioned to the artist from a friend shows a Titan and Pilot from the game Titanfall 2. The pair rush off in battle during evenig hours as explosions remain a primary source of light. Both the Titan and Pilot charge forward with determination. The only thing that can stop this giant mech and skilled warrior is a opossing Pilot with a Titan of their own.",
     },{
         title: "Otherworldy Bird",
@@ -39,6 +43,7 @@
         description: "A fictional creature created by the artist with a goldren grown of feathers and skull like face with antlers.",
         post_link: "https://www.instagram.com/p/Cy1JHOQAIGN/?next=%2F",
         image: "./images/bird.png",
+        image_small: "./images/imagecompressor/bird-min.png",
         details: "A sketch done by the artist depicts a mythical like bird creature. Its skull-like head with dark colored antlers sprouting from it give it a sinister feeling. The crown of golden feathers behind its head make it more majestic and powerful in feeling. The real mystery is the amethyst colored gemstone inbeded in its chest, blood seeping around the wound.",
     },{
         title: "Godzilla Minus One",
@@ -47,6 +52,7 @@
         description: "Fanart of Godzilla from the movie Godzilla Minus One.",
         post_link: "n/a",
         image: "./images/godzilla.jpg",
+        image_small: "./images/imagecompressor/godzilla-min.png",
         details: "A long time favorite movie monster of the artist, Godzilla is destructive and meant to be feared. In the movie Godzilla Minus One, the monster is depicticed as a terrifying and unstopable force as a symbol of direct consequences to the testing of atomic weapons. The radiation of the testing made Godzilla painfully mutate into the giant monster he is and seeeks revenge for what happened to him.",
     },{
         title: "The Salamanders",
@@ -55,6 +61,7 @@
         description: "A drawing of two Space Marine belonging to the Salamander Chapter.",
         post_link: "https://www.instagram.com/p/DHE5OjsvuUZ/?next=%2F",
         image: "./images/warhammer.png",
+        image_small: "./images/imagecompressor/warhammer-min.png",
         details: "From the Warhammer series, the Salamanders are known to fight to save civilians and are more kind to them compared to other Space Marine Chapters. These armor designs come from the game Space Marine 2 which was used as refrence to do this artwork. These two Space Marines are ready to face any Xenos that comes their way and have lots of battle experience.",
     },{
         title: "Windrunner",
@@ -63,6 +70,7 @@
         description: "Commissioned piece of an armored warrior from the book series Stormlight Archive by Brandon Sanderson.",
         post_link: "https://www.instagram.com/p/DE3QEolvWWZ/?next=%2F",
         image: "./images/windrunner.png",
+        image_small: "./images/imagecompressor/windrunner-min.png",
         details: "This is a Knight Radiant known to be a Windrunner. Bonded with a special creater known as a Spren, this knight has acess to great power he will use to protect humanity and follow the Ideals he has sworn to. He kneels confronting a storm and gathering Stormlight to use his abilities. Strong and honorable, he will do everything he can to protect his friends and family.",
     },
  ]
