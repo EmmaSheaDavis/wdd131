@@ -101,7 +101,11 @@ h2 {
 .hide {
   display: none;
 }
-
+.year {
+  font-size: 25px;
+  border: 2px solid var(--primary-color);
+  width: 55px;
+}
 @media screen and (min-width: 600px) {
   #search-bar {
     width: 500px;
@@ -134,5 +138,9 @@ h2 {
   }
   #search-bar {
     width: 700px;
+  }
+  .year {
+    font-size: 20px;
+    width: 45px;
   }
 }
