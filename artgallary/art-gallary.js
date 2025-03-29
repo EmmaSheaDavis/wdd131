@@ -102,6 +102,7 @@ function artworkTemplate(artwork) {
             class="artwork-img"
             src=${artwork.image_small}
             alt=${artwork.title}
+            data-id="${artwork.title}"
           />
           <div class="content">
             <h2>${artwork.title}</h2>
@@ -111,6 +112,24 @@ function artworkTemplate(artwork) {
             </p>
           </div>
         </div>`;
+}
+
+function viewerTemplate(artwork) {
+  return `
+    <div class="viewer" aria-modal="true" role="dialog">
+      <button class="close-viewer">X</button>
+      <div class="viewer-content">
+        <img src="${artwork.image_small}" alt="${artwork.title} full image">
+        <div class="artwork-details">
+          <h2>${artwork.title}</h2>
+          <p><strong>Year:</strong> ${artwork.year}</p>
+          <p><strong>Completion Time:</strong> ${artwork.hours}</p>
+          <p class= "description"><strong>Description:</strong> ${artwork.description}</p>
+          <p><strong>Details:</strong> ${artwork.details}</p>
+          ${artwork.post_link !== "n/a" ? `<p><strong>View Post:</strong> <a href="${artwork.post_link}" target="_blank">Instagram Link</a></p>` : ""}
+        </div>
+      </div>
+    </div>`;
 }
 
 function renderArtworks(artworkList) {
@@ -125,8 +144,31 @@ function renderArtworks(artworkList) {
   }
 }
 
+function showViewer(artwork) {
+  const viewer = viewerTemplate(artwork);
+  document.body.insertAdjacentHTML('beforeend', viewer);
+  
+  // Add close functionality
+  const closeButton = document.querySelector('.close-viewer');
+  closeButton.addEventListener('click', () => {
+    const viewerElement = document.querySelector('.viewer');
+    if (viewerElement) viewerElement.remove();
+  });
+}
+
 function init() {
   renderArtworks(artworks);
+
+  document.querySelector('.art-cards').addEventListener('click', (e) => {
+    const img = e.target.closest('.artwork-img');
+    if (img) {
+      const artworkTitle = img.getAttribute('data-id');
+      const selectedArtwork = artworks.find(art => art.title === artworkTitle);
+      if (selectedArtwork) {
+        showViewer(selectedArtwork);
+      }
+    }
+  });
 }
 
 function compareFn(a, b) {

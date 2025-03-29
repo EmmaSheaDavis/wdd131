@@ -106,6 +106,57 @@ h2 {
   border: 2px solid var(--primary-color);
   width: 55px;
 }
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.viewer-content {
+  background-color: var(--accent1-color);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.viewer img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.artwork-details {
+  color: var(--primary-color);
+  font-family: var(--paragraph-font);
+}
+.artwork-details h2 {
+  margin-top: 0;
+}
+.close-viewer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.close-viewer:hover {
+  background-color: var(--secondary-color);
+}
 @media screen and (min-width: 600px) {
   #search-bar {
     width: 500px;
@@ -126,6 +177,13 @@ h2 {
   .artwork-list {
     width: 100%;
   }
+  .viewer-content {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  .viewer img {
+    max-width: 400px;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -142,5 +200,8 @@ h2 {
   .year {
     font-size: 20px;
     width: 45px;
+  }
+  .description {
+    display: none;
   }
 }
