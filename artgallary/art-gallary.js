@@ -50,7 +50,7 @@ const artworks = [
     year: "2023",
     hours: "3 hrs 8 min",
     description:
-      "A fictional creature created by the artist with a goldren grown of feathers and skull like face with antlers.",
+      "A fictional creature created by the artist with a golden crown of feathers and skull like face with antlers.",
     post_link: "https://www.instagram.com/p/Cy1JHOQAIGN/?next=%2F",
     image: "./images/bird.png",
     image_small: "./images/imagecompressor/bird-min.png",
