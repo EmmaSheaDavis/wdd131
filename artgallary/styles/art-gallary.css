@@ -157,6 +157,9 @@ h2 {
 .close-viewer:hover {
   background-color: var(--secondary-color);
 }
+.details {
+  line-height: 1.5;
+}
 @media screen and (min-width: 600px) {
   #search-bar {
     width: 500px;

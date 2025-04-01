@@ -125,7 +125,7 @@ function viewerTemplate(artwork) {
           <p><strong>Year:</strong> ${artwork.year}</p>
           <p><strong>Completion Time:</strong> ${artwork.hours}</p>
           <p class= "description"><strong>Description:</strong> ${artwork.description}</p>
-          <p><strong>Details:</strong> ${artwork.details}</p>
+          <p class= "details"><strong>Details:</strong> ${artwork.details}</p>
           ${artwork.post_link !== "n/a" ? `<p><strong>View Post:</strong> <a href="${artwork.post_link}" target="_blank">Instagram Link</a></p>` : ""}
         </div>
       </div>
